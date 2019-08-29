@@ -4,9 +4,10 @@
 - Servlet
 - Java Server Page (JSP)
 
-## Define servlets
+## Create a servlet
 
-**With XML** (`src/main/webapp/WEB-INF/web.xml`).
+##### 1. Declare a servlet via xml
+Open `src/main/webapp/WEB-INF/web.xml` and write this code:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -28,7 +29,8 @@
 </web-app>
 ```
 
-**With annotations** (`HomeServlet.java`).
+##### 2. Declare a servlet via xml annotation
+To create a servlet using annotation, create `HomeServlet.java` and write this code:
 ```java
 
 @WebServlet("/")
@@ -40,3 +42,10 @@ public class HomeServlet extends HttpServlet {
     }
 }
 ```
+
+## Contribute
+For any problems, comments, or feedback please create an issue [here](https://github.com/egnaf/servlet-jsp-example/issues).
+<br>
+
+## License
+This software is released under the [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
