@@ -6,7 +6,7 @@
 
 ## Create a servlet
 
-##### 1. Declare a servlet via xml
+#### 1. Declare a servlet via xml
 Open `src/main/webapp/WEB-INF/web.xml` and write this code:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -29,7 +29,7 @@ Open `src/main/webapp/WEB-INF/web.xml` and write this code:
 </web-app>
 ```
 
-##### 2. Declare a servlet via xml annotation
+#### 2. Declare a servlet via xml annotation
 To create a servlet using annotation, create `HomeServlet.java` and write this code:
 ```java
 
