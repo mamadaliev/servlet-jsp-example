@@ -29,7 +29,7 @@ Open `src/main/webapp/WEB-INF/web.xml` and write this code:
 </web-app>
 ```
 
-#### 2. Declare a servlet via xml annotation
+#### 2. Declare a servlet via annotation
 To create a servlet using annotation, create `HomeServlet.java` and write this code:
 ```java
 
