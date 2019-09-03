@@ -3,17 +3,14 @@
 ## Technologies
 - Servlet
 - Java Server Page (JSP)
+- GlassFish server
 
 ## Create a servlet
 
 #### 1. Declare a servlet via xml
 Open `src/main/webapp/WEB-INF/web.xml` and write this code:
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://java.sun.com/xml/ns/javaee"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-         version="3.0">
+...
 
     <!-- Servlet -->
     <servlet>
@@ -26,21 +23,16 @@ Open `src/main/webapp/WEB-INF/web.xml` and write this code:
         <servlet-name>homeServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-</web-app>
+...
 ```
 
 #### 2. Declare a servlet via annotation
 To create a servlet using annotation, create `HomeServlet.java` and write this code:
 ```java
 
-@WebServlet("/")
+@WebServlet("/home")
 public class HomeServlet extends HttpServlet {
-
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().write("Home page");
-    }
-}
+...
 ```
 
 ## Contribute
